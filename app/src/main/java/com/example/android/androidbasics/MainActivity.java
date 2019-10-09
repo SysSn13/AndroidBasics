@@ -13,6 +13,8 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     private TextView textViewCheckBoxBasics;
+    private TextView textViewRadioButtonBasics;
+    private TextView textViewRatingBarBasics;
     private ProgressBar progressBar;
 
 
@@ -40,6 +42,18 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
+        textViewRadioButtonBasics.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, RadioButtonBasics.class));
+            }
+        });
+        textViewRatingBarBasics.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, RatingBarBasics.class));
+            }
+        });
     }
 
 
@@ -47,7 +61,8 @@ public class MainActivity extends AppCompatActivity {
         private void defineVariables () {
 
             textViewCheckBoxBasics = (TextView) findViewById(R.id.tvCheckBoxBasics);
-
+            textViewRadioButtonBasics = (TextView) findViewById(R.id.tvRadioButton_basics);
+            textViewRatingBarBasics = (TextView) findViewById(R.id.tvRatingBar_basics);
 
         }
 

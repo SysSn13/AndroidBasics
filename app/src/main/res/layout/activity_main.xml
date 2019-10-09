@@ -2,7 +2,7 @@
 <ScrollView android:layout_height="match_parent"
     android:layout_width="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    >
 
 
 <LinearLayout
@@ -41,9 +41,27 @@
         android:id="@+id/tvCheckBoxBasics"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
+        android:layout_margin="16dp"
+        android:textStyle="bold"
         android:text="1.    CheckBox Basics"
          />
+    <TextView
+        android:id="@+id/tvRadioButton_basics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_margin="16dp"
+        android:text="2.    RadioButton Basics"
+        />
+    <TextView
+    android:id="@+id/tvRatingBar_basics"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textStyle="bold"
+    android:layout_margin="16dp"
+    android:text="3.    RatingBar Basics"
+    />
+
 
 </LinearLayout>
 </ScrollView>
