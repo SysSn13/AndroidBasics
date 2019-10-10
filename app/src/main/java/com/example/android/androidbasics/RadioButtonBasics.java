@@ -31,9 +31,9 @@ public class RadioButtonBasics extends AppCompatActivity {
                  int selectedId = radio_group.getCheckedRadioButtonId();
 
                      radio_b = (RadioButton) findViewById(selectedId);
-                     if(radio_b.getText().toString()!=null) {
+
                          Toast.makeText(RadioButtonBasics.this, radio_b.getText().toString() + " is selected", Toast.LENGTH_SHORT).show();
-                     }
+
 
 
              }

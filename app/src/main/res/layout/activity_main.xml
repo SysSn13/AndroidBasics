@@ -61,6 +61,23 @@
     android:layout_margin="16dp"
     android:text="3.    RatingBar Basics"
     />
+    <TextView
+    android:id="@+id/tvAlertDialog_basics"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textStyle="bold"
+    android:layout_margin="16dp"
+    android:text="4.    AlertDialog Basics"
+    />
+    <TextView
+        android:id="@+id/tvClock_basics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_margin="16dp"
+        android:text="5.    Clock Basics"
+        />
+
 
 
 </LinearLayout>

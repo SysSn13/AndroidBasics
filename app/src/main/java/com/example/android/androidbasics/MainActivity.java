@@ -15,6 +15,9 @@ public class MainActivity extends AppCompatActivity {
     private TextView textViewCheckBoxBasics;
     private TextView textViewRadioButtonBasics;
     private TextView textViewRatingBarBasics;
+    private TextView textViewAlertDialogBasics;
+    private TextView textViewClockBasics;
+
     private ProgressBar progressBar;
 
 
@@ -54,6 +57,18 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, RatingBarBasics.class));
             }
         });
+        textViewAlertDialogBasics.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, AlertDialogBasics.class));
+            }
+        });
+        textViewClockBasics.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, ClockBasics.class));
+            }
+        });
     }
 
 
@@ -63,6 +78,9 @@ public class MainActivity extends AppCompatActivity {
             textViewCheckBoxBasics = (TextView) findViewById(R.id.tvCheckBoxBasics);
             textViewRadioButtonBasics = (TextView) findViewById(R.id.tvRadioButton_basics);
             textViewRatingBarBasics = (TextView) findViewById(R.id.tvRatingBar_basics);
+            textViewAlertDialogBasics =(TextView) findViewById(R.id.tvAlertDialog_basics);
+            textViewClockBasics =(TextView) findViewById(R.id.tvClock_basics);
+
 
         }
 
