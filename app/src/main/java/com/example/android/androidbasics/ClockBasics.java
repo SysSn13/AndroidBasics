@@ -22,6 +22,23 @@ public class ClockBasics extends AppCompatActivity {
         setContentView(R.layout.activity_clock_basics);
         onButtonClickListener();
         onShowTimeButtonClickListener();
+        // inititate the digital and analog clock
+        digitalClock = (DigitalClock) findViewById(R.id.simpleDigitalClock);
+        analogClock = (AnalogClock) findViewById(R.id.simpleAnalogClock);
+        // perform click event on analog clock
+        analogClock.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(ClockBasics.this, "Analog Clock", Toast.LENGTH_SHORT).show(); // display a toast for analog clock
+            }
+        });
+        // perform click event on digital clock
+        digitalClock.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(ClockBasics.this, "Digital Clock", Toast.LENGTH_SHORT).show(); //display a toast for digital clock
+            }
+        });
     }
     public void onButtonClickListener(){
         swapClockButton = (Button)findViewById(R.id.button_swapClock_clock_basics);

@@ -13,12 +13,16 @@
         android:id="@+id/simpleAnalogClock"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="#FF9800"
         android:layout_gravity="center_horizontal"
         android:layout_margin="16dp"
         android:soundEffectsEnabled="true" />
     <DigitalClock
         android:id="@+id/simpleDigitalClock"
         android:layout_width="wrap_content"
+        android:padding="30dp"
+        android:background="#FF9800"
+        android:textSize="40sp"
         android:layout_gravity="center_horizontal"
         android:layout_margin="16dp"
         android:layout_height="wrap_content" />

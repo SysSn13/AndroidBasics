@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.android.androidbasics">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/logo"
@@ -9,8 +11,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ClockBasics"
-                   android:label="Clock Basics"  ></activity>
+        <activity android:name=".AutoCompleteTextViewActivity"></activity>
+        <activity
+            android:name=".FragmentsBasicsActivity"
+            android:label="Fragments Basics" />
+        <activity
+            android:name=".AndroidGesturesActivity"
+            android:label="Android Gestures" />
+        <activity
+            android:name=".WebViewBasics"
+            android:label="WebView Basics" />
+        <activity
+            android:name=".SeekBarBasics"
+            android:label="SeekBar Basics" />
+        <activity
+            android:name=".ListViewBasics"
+            android:label="ListView Basics" />
+        <activity
+            android:name=".ClockBasics"
+            android:label="Clock Basics" />
         <activity
             android:name=".AlertDialogBasics"
             android:label="AlertDialog Basics" />

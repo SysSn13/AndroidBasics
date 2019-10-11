@@ -77,6 +77,57 @@
         android:layout_margin="16dp"
         android:text="5.    Clock Basics"
         />
+    <TextView
+        android:id="@+id/tvListView_basics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_margin="16dp"
+        android:text="6.    ListView Basics"
+        />
+    <TextView
+        android:id="@+id/tvSeekBar_basics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_margin="16dp"
+        android:text="7.    SeekBar Basics"
+        />
+    <TextView
+        android:id="@+id/tvWebView_basics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_margin="16dp"
+        android:text="8.    WebView Basics"
+        />
+    <TextView
+        android:id="@+id/tv_android_gestures_basics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_margin="16dp"
+        android:text="9.    Android Gestures"
+        />
+    <TextView
+        android:id="@+id/tv_fragments_basics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_margin="16dp"
+        android:text="10.    Fragments Basics"
+        />
+    <TextView
+        android:id="@+id/tv_auto_complete_textView_basics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_margin="16dp"
+        android:text="11.    AutoCompleteTextView Basics"
+        />
+
+
+
 
 
 
