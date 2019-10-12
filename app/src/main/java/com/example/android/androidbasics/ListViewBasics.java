@@ -22,7 +22,7 @@ import java.util.List;
 public class ListViewBasics extends AppCompatActivity {
     private ListView simpleList, coustomList;
     private String AnimalsName[] = {"Cat", "Dog", "Cow", "Monkey", "Lion", "Rabbit", "Elephant", "Zebra"};
-    private int animalsImage[] = {R.drawable.cat, R.drawable.dog, R.drawable.cow, R.drawable.monkey, R.drawable.lion, R.drawable.rabbit, R.drawable.elephant, R.drawable.zebra};
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

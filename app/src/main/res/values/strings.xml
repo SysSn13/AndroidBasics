@@ -2,5 +2,17 @@
     <string name="app_name">Android Basics</string>
 
     <!-- TODO: Remove or change this placeholder text -->
+
+        <string name="hello">MainActivity</string>
+        
+     
+        <string name="phone">Phone</string>
+        <string name="computer">Computer</string>
+        <string name="gamepad">Gamepad</string>
+     
+        <string name="camera">Camera</string>
+        <string name="video">Video</string>
+     
+        <string name="email">EMail</string>
     <string name="hello_blank_fragment">Hello blank fragment1</string>
 </resources>

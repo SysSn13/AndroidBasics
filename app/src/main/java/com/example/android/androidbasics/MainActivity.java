@@ -1,9 +1,13 @@
 package com.example.android.androidbasics;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
@@ -26,7 +30,11 @@ public class MainActivity extends AppCompatActivity {
     private TextView textViewGesturesBasics;
     private TextView textViewFragmentsBasics;
     private TextView textViewAutoCompleteTextViewBasics;
-
+    private TextView textViewTimePickerBasics;
+    private TextView textViewTimePickerDialogBasics;
+    private TextView textViewDatePickerDialogBasics;
+    private TextView textViewNotificationBasics;
+    private TextView textViewActionBarBasics;
 
     private ProgressBar progressBar;
 
@@ -35,8 +43,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         //defining variables
         defineVariables();
+
 
         progressBar = (ProgressBar) findViewById(R.id.progressbar);
 
@@ -47,6 +57,71 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        super.onOptionsItemSelected(item);
+
+        switch(item.getItemId()){
+            case R.id.phone:
+                Toast.makeText(getBaseContext(), "You selected Phone", Toast.LENGTH_SHORT).show();
+                break;
+
+            case R.id.computer:
+                Toast.makeText(getBaseContext(), "You selected Computer", Toast.LENGTH_SHORT).show();
+                break;
+
+            case R.id.gamepad:
+                Toast.makeText(getBaseContext(), "You selected Gamepad", Toast.LENGTH_SHORT).show();
+                break;
+
+            case R.id.camera:
+                Toast.makeText(getBaseContext(), "You selected Camera", Toast.LENGTH_SHORT).show();
+                break;
+
+            case R.id.video:
+                Toast.makeText(getBaseContext(), "You selected Video", Toast.LENGTH_SHORT).show();
+                break;
+
+            case R.id.email:
+                Toast.makeText(getBaseContext(), "You selected Email", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.android_studio:
+                Toast.makeText(getBaseContext(), "You selected Android Studio", Toast.LENGTH_SHORT).show();
+                break;
+
+        }
+        return true;
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     //Method of defining variables
@@ -63,10 +138,11 @@ public class MainActivity extends AppCompatActivity {
         textViewGesturesBasics =(TextView) findViewById(R.id.tv_android_gestures_basics);
         textViewFragmentsBasics =(TextView) findViewById(R.id.tv_fragments_basics);
         textViewAutoCompleteTextViewBasics =(TextView)  findViewById(R.id.tv_auto_complete_textView_basics);
-
-
-
-
+        textViewTimePickerBasics = (TextView) findViewById(R.id.tv_timePicker_basics);
+        textViewTimePickerDialogBasics =(TextView) findViewById(R.id.tv_timePickerDialog_basics);
+        textViewDatePickerDialogBasics =(TextView) findViewById(R.id.tv_datePickerDialog_basics);
+        textViewNotificationBasics = (TextView) findViewById(R.id.tv_notification_basics);
+        textViewActionBarBasics = (TextView) findViewById(R.id.tv_actionBar_basics);
     }
 
     private void setOnclickListeners() {
@@ -143,9 +219,36 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, AutoCompleteTextViewActivity.class));
             }
         });
-
-
-
+        textViewTimePickerBasics.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, TimePickerBasicsActivity.class));
+            }
+        });
+        textViewTimePickerDialogBasics.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, TimePickerDialogActivity.class));
+            }
+        });
+        textViewDatePickerDialogBasics.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, DatePickerDialogActivity.class));
+            }
+        });
+        textViewNotificationBasics.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, NotificationManagerActivity.class));
+            }
+        });
+        textViewActionBarBasics.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, ActionBarActivity.class));
+            }
+        });
 
 
     }

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/phone"
+        android:title="@string/phone"
+        android:icon="@drawable/phone"
+        app:showAsAction="ifRoom|withText" />
+    <item
+        android:id="@+id/android_studio"
+        android:title="Android Studio"
+        android:icon="@drawable/logo"
+        app:showAsAction="always"
+
+        />
+    <item
+        android:id="@+id/computer"
+        android:title="@string/computer"
+        android:icon="@drawable/computer"
+        app:showAsAction="ifRoom|withText" />
+
+    <item
+        android:id="@+id/gamepad"
+        android:title="@string/gamepad"
+        android:icon="@drawable/gamepad"
+        app:showAsAction="ifRoom|withText" />
+
+    <item
+        android:id="@+id/camera"
+        android:title="@string/camera"
+        android:icon="@drawable/camera"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/video"
+        android:title="@string/video"
+        android:icon="@drawable/video"
+        app:showAsAction="ifRoom|withText" />
+
+    <item
+        android:id="@+id/email"
+        android:title="Email"
+        android:icon="@drawable/email"
+        app:showAsAction="always" />
+</menu>

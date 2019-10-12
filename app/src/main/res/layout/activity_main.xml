@@ -125,6 +125,46 @@
         android:layout_margin="16dp"
         android:text="11.    AutoCompleteTextView Basics"
         />
+    <TextView
+        android:id="@+id/tv_timePicker_basics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_margin="16dp"
+        android:text="12.    TimePicker Basics"
+        />
+    <TextView
+        android:id="@+id/tv_timePickerDialog_basics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_margin="16dp"
+        android:text="13.    TimePicker Dialog Basics"
+        />
+    <TextView
+        android:id="@+id/tv_datePickerDialog_basics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_margin="16dp"
+        android:text="14.    DatePicker Dialog Basics"
+        />
+    <TextView
+        android:id="@+id/tv_notification_basics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_margin="16dp"
+        android:text="15.    Notification Basics"
+        />
+    <TextView
+        android:id="@+id/tv_actionBar_basics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_margin="16dp"
+        android:text="16.    ActionBar Basics"
+        />
 
 
 

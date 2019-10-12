@@ -11,7 +11,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AutoCompleteTextViewActivity"></activity>
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@menu/menu" />
+
+        <activity android:name=".ActionBarActivity"
+            android:label="ActionBar Basics"
+            android:parentActivityName=".MainActivity"
+            />
+        <activity
+            android:name=".NotificationManagerActivity"
+            android:label="Notification Basics" />
+        <activity
+            android:name=".DatePickerDialogActivity"
+            android:label="Date Picker Dialog" />
+        <activity
+            android:name=".TimePickerDialogActivity"
+            android:label="TimePicker Dialog" />
+        <activity
+            android:name=".TimePickerBasicsActivity"
+            android:label="TimePicker" />
+        <activity android:name=".AutoCompleteTextViewActivity" />
         <activity
             android:name=".FragmentsBasicsActivity"
             android:label="Fragments Basics" />
